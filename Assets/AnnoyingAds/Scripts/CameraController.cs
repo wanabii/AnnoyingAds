@@ -26,7 +26,7 @@ public class CameraController : MonoBehaviour
         float mouseY = Input.GetAxis("Mouse Y") * sensitivity;
         
         // Поворот камеры вокруг вертикальной оси (ось Y)
-        horizontalRotation -= mouseX;
+        horizontalRotation += mouseX;
         horizontalRotation = Mathf.Clamp(horizontalRotation, -maxHorizontalAngle, maxHorizontalAngle);
         
 

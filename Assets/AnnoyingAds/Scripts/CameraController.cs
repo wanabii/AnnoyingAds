@@ -4,14 +4,14 @@ using UnityEngine.InputSystem;
 public class CameraController : MonoBehaviour
 {
     // Чувствительность мыши
-    public float sensitivity = 2f;
+    public float _sensitivity = 2f;
     // Максимальный угол для вертикального поворота
-    public float maxVerticalAngle = 80f;
-    public float maxHorizontalAngle = 80f;
+    public float _maxVerticalAngle = 80f;
+    public float _maxHorizontalAngle = 80f;
 
     // Вспомогательная переменная для накопления вертикального поворота
-    private float verticalRotation = 0f;
-    private float horizontalRotation = 0f;
+    private float _verticalRotation = 0f;
+    private float _horizontalRotation = 0f;
 
     void Start()
     {
@@ -25,22 +25,22 @@ public class CameraController : MonoBehaviour
         Cursor.visible = true;
 
         // Получаем движение мыши по осям X и Y
-        float mouseX = Input.GetAxis("Mouse X") * sensitivity;
-        float mouseY = Input.GetAxis("Mouse Y") * sensitivity;
+        float mouseX = Input.GetAxis("Mouse X") * _sensitivity;
+        float mouseY = Input.GetAxis("Mouse Y") * _sensitivity;
         
         // Поворот камеры вокруг вертикальной оси (ось Y)
-        horizontalRotation += mouseX;
-        horizontalRotation = Mathf.Clamp(horizontalRotation, -maxHorizontalAngle, maxHorizontalAngle);
+        _horizontalRotation += mouseX;
+        _horizontalRotation = Mathf.Clamp(_horizontalRotation, -_maxHorizontalAngle, _maxHorizontalAngle);
         
 
         // Накопление вертикального поворота и его ограничение
-        verticalRotation -= mouseY;
-        verticalRotation = Mathf.Clamp(verticalRotation, -maxVerticalAngle, maxVerticalAngle);
+        _verticalRotation -= mouseY;
+        _verticalRotation = Mathf.Clamp(_verticalRotation, -_maxVerticalAngle, _maxVerticalAngle);
         
         // Применяем ограниченный вертикальный поворот
         Vector3 currentRotation = transform.localEulerAngles;
-        currentRotation.y = horizontalRotation;
-        currentRotation.x = verticalRotation;
+        currentRotation.y = _horizontalRotation;
+        currentRotation.x = _verticalRotation;
         
         currentRotation.z = 0;
         

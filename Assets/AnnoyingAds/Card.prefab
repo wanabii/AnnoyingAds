@@ -235,7 +235,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _image: {fileID: 1545474633091672317}
-  _text: {fileID: 3479177767292752649}
+  _name: {fileID: 3479177767292752649}
   _sendAddButton: {fileID: 5176888647902319420}
 --- !u!1 &6270046538071766746
 GameObject:

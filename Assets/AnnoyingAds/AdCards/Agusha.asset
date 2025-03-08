@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cde70ede88cddf8439247f531541e040, type: 3}
   m_Name: Agusha
   m_EditorClassIdentifier: 
-  image: {fileID: 0}
-  name: Agusha
-  text: adfsdfa
-  positiveTags: []
-  negativeTags: []
+  _image: {fileID: 21300000, guid: 744ab3b5a362248458e2a4afe72b1610, type: 3}
+  _name: Smart
+  _text: 
+  _positiveTags:
+  - "\u0423\u043C\u043D\u044B\u0439"
+  _negativeTags:
+  - "\u0413\u043B\u0443\u043F\u044B\u0439"

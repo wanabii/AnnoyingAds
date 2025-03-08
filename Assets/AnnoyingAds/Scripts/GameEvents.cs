@@ -6,6 +6,8 @@ namespace AnnoyingAds.Scripts
     {
         public static event Action<AdCard> OnSendAd;
         public static event Action OnDayEnd;
+
+        public static event Action OnNextPerson;
         
         public static void SendAd(AdCard adCard)
         {
@@ -15,6 +17,11 @@ namespace AnnoyingAds.Scripts
         public static void DayEnd()
         {
             OnDayEnd?.Invoke();
+        }
+
+        public static void NextPerson()
+        {
+            OnNextPerson?.Invoke();
         }
     }
 }

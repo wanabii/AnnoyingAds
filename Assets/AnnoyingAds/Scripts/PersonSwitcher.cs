@@ -7,13 +7,25 @@ namespace AnnoyingAds.Scripts
     {
         [SerializeField] private PersonList _personList;
         [SerializeField] private PersonView _personView;
-        
+
         private int _currentIndex = 0;
+        public Person CurrentPerson => _personList._list[_currentIndex];
+
+        private void OnEnable()
+        {
+            GameEvents.OnNextPerson += HandleNextPerson;
+        }
+
+        private void OnDisable()
+        {
+            GameEvents.OnNextPerson -= HandleNextPerson;
+        }
+        
         private void Start()
         {
-            if (_personList != null && _personList.list != null && _personList.list.Count > 0)
+            if (_personList != null && _personList._list != null && _personList._list.Count > 0)
             {
-                _personView.DrawPerson(_personList.list[_currentIndex]);
+                _personView.DrawPerson(CurrentPerson);
             }
             else
             {
@@ -21,22 +33,14 @@ namespace AnnoyingAds.Scripts
             }
         }
         
-        private void OnEnable()
-        {
-            GameEvents.OnSendAd += OnSendAdHandler;
-        }
 
-        private void OnDisable()
-        {
-            GameEvents.OnSendAd -= OnSendAdHandler;
-        }
 
-        private void OnSendAdHandler(AdCard adCard)
+        private void HandleNextPerson()
         {
             _currentIndex++;
-            if (_currentIndex < _personList.list.Count)
+            if (_currentIndex < _personList._list.Count)
             {
-                _personView.DrawPerson(_personList.list[_currentIndex]);
+                _personView.DrawPerson(CurrentPerson);
             }
             else
             {

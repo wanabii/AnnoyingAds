@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af7b5356f8949f54d9ca40319ac4d1f9, type: 3}
   m_Name: Ann
   m_EditorClassIdentifier: 
-  image: {fileID: 21300000, guid: 39706f3062bc9244ca638e4c2dac0436, type: 3}
-  name: Ann
-  age: 32
-  text: Love Cats
-  parametrs: 
-  positiveTags: []
-  negativeTags: []
+  _image: {fileID: 0}
+  _name: Ann
+  _age: 22
+  _text: 
+  _parametrs: "\u0416\u0435\u043D\u044C\u0449\u0438\u043D\u0430, \u0437\u0430\u043A\u043E\u043D\u0447\u0438\u043B\u0430
+    \u0443\u043D\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442"
+  _tags:
+  - "\u0423\u043C\u043D\u044B\u0439"

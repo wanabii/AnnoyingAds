@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ddf0a0b434399a419bd055b94855c1c, type: 3}
   m_Name: AdCards
   m_EditorClassIdentifier: 
-  adCards:
+  _adCards:
   - {fileID: 11400000, guid: 78c88ef453bd43542bd752855b82ab29, type: 2}
   - {fileID: 11400000, guid: e30851ee9934391469b5f7e1e4e22b51, type: 2}
   - {fileID: 11400000, guid: 3780454b88d4fec4996fd532a6056f09, type: 2}

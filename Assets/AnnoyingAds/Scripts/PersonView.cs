@@ -21,10 +21,10 @@ public class PersonView : MonoBehaviour
     public void DrawPerson(Person config)
     {
         _config = config;
-        _image.sprite = config.image;
-        _name.text = config.name;
-        _ageValue.text = config.age.ToString();
-        _parametrs.text = config.parametrs;
+        _image.sprite = config._image;
+        _name.text = config._name;
+        _ageValue.text = config._age.ToString();
+        _parametrs.text = config._parametrs;
         _frase.text = "";
     }
     
@@ -43,7 +43,7 @@ public class PersonView : MonoBehaviour
     private void OnTypeButtonClicked()
     {
         Debug.Log("Click");
-        StartCoroutine(TypeText(_config.text));
+        StartCoroutine(TypeText(_config._text));
     }
 
     private IEnumerator TypeText(string fullText)

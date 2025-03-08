@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cde70ede88cddf8439247f531541e040, type: 3}
   m_Name: Agusha 2
   m_EditorClassIdentifier: 
-  image: {fileID: 21300000, guid: 744ab3b5a362248458e2a4afe72b1610, type: 3}
-  name: 3
-  text: agrag
-  positiveTags: []
-  negativeTags: []
+  _image: {fileID: 21300000, guid: 4e41e5d7255467f4fa909456ffdedcc0, type: 3}
+  _name: Nothing
+  _text: 
+  _positiveTags: []
+  _negativeTags: []

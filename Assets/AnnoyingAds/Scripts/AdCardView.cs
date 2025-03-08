@@ -8,14 +8,14 @@ using UnityEngine.UI;
 public class AdCardView : MonoBehaviour
 {
     [SerializeField] private Image _image;
-    [SerializeField] private TextMeshProUGUI _text;
+    [SerializeField] private TextMeshProUGUI _name;
     [SerializeField] private Button _sendAddButton;
     private AdCard _config;
 
     public void DrawCard(AdCard adCard)
     {
-        _image.sprite = adCard.image;
-        _text.text = adCard.text;
+        _image.sprite = adCard._image;
+        _name.text = adCard._name;
         _config = adCard;
     }
 

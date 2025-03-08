@@ -4,11 +4,10 @@ using UnityEngine.UI;
 [CreateAssetMenu(fileName = "Person", menuName = "Scriptable Objects/Person")]
 public class Person : ScriptableObject
 {
-    public Sprite image;
-    public string name;
-    public int age;
-    public string text;
-    public string parametrs;
-    public string[] positiveTags;
-    public string[] negativeTags;
+    public Sprite _image;
+    public string _name;
+    public int _age;
+    public string _text;
+    public string _parametrs;
+    public string[] _tags;
 }

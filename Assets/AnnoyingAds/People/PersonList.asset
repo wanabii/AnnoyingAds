@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47a6d8965a934dedbb1fd723e874264b, type: 3}
   m_Name: PersonList
   m_EditorClassIdentifier: 
-  list:
-  - {fileID: 11400000, guid: fa01ecb473625bf4c942db3d6b1c288f, type: 2}
+  _list:
   - {fileID: 11400000, guid: 4697ce2bd9022c54d9db695459070a17, type: 2}
+  - {fileID: 11400000, guid: fa01ecb473625bf4c942db3d6b1c288f, type: 2}

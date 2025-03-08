@@ -7,7 +7,7 @@ using Random = UnityEngine.Random;
 public class AdList : MonoBehaviour
 {
     [SerializeField] private AdCards Config;
-    [SerializeField] private Card[] _cards;
+    [SerializeField] private AdCardView[] _cards;
     private List<AdCard> _cardsArray;
     private List<AdCard> adCard;
 

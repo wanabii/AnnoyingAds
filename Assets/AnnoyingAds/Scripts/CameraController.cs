@@ -16,11 +16,13 @@ public class CameraController : MonoBehaviour
     {
         // Блокируем курсор и скрываем его
         Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        Cursor.visible = true;
     }
 
     void Update()
     {
+        Cursor.visible = true;
+
         // Получаем движение мыши по осям X и Y
         float mouseX = Input.GetAxis("Mouse X") * sensitivity;
         float mouseY = Input.GetAxis("Mouse Y") * sensitivity;

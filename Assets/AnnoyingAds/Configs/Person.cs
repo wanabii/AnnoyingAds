@@ -8,7 +8,7 @@ public class Person : ScriptableObject
     public string name;
     public int age;
     public string text;
-    public string[] parametrs;
+    public string parametrs;
     public string[] positiveTags;
     public string[] negativeTags;
 }

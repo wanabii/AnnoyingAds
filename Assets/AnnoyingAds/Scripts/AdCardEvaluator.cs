@@ -23,7 +23,7 @@ public class AdCardEvaluator : MonoBehaviour
     {
         int pointsChange = 0;
 
-        foreach (string positiveTag in adCard._positiveTags)
+        foreach (ETags positiveTag in adCard._positiveTags)
         {
             if (Array.Exists(_personSwitcher.CurrentPerson._tags, tag => tag.Equals(positiveTag)))
             {
@@ -33,7 +33,7 @@ public class AdCardEvaluator : MonoBehaviour
             }
         }
 
-        foreach (string negativeTag in adCard._negativeTags)
+        foreach (ETags negativeTag in adCard._negativeTags)
         {
             if (Array.Exists(_personSwitcher.CurrentPerson._tags, tag => tag.Equals(negativeTag)))
             {

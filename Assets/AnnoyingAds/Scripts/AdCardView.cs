@@ -9,6 +9,7 @@ public class AdCardView : MonoBehaviour
 {
     [SerializeField] private Image _image;
     [SerializeField] private TextMeshProUGUI _name;
+    [SerializeField] private TextMeshProUGUI _description;
     [SerializeField] private Button _sendAddButton;
     private AdCard _config;
 
@@ -16,6 +17,7 @@ public class AdCardView : MonoBehaviour
     {
         _image.sprite = adCard._image;
         _name.text = adCard._name;
+        _description.text = adCard._text;
         _config = adCard;
     }
 

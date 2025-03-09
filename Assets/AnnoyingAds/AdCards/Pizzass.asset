@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cde70ede88cddf8439247f531541e040, type: 3}
+  m_Name: Pizzass
+  m_EditorClassIdentifier: 
+  _image: {fileID: 21300000, guid: b093ff13ebf599841bc3f129ec365e4b, type: 3}
+  _name: Pizzass
+  _text: Buy 2 pizzas and get a tank free!
+  _positiveTags: 0d00000006000000
+  _negativeTags: 050000000f000000

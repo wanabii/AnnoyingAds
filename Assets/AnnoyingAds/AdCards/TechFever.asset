@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cde70ede88cddf8439247f531541e040, type: 3}
+  m_Name: TechFever
+  m_EditorClassIdentifier: 
+  _image: {fileID: 21300000, guid: 36e0e3af6a6da2e41a31b23ccc4c62c8, type: 3}
+  _name: "TechFever\t"
+  _text: "Stay on trend with our gadgets \u2013 innovation for everyone!\t"
+  _positiveTags: 07000000
+  _negativeTags: 1200000004000000

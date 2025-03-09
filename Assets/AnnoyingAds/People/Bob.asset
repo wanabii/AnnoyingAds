@@ -15,10 +15,7 @@ MonoBehaviour:
   _image: {fileID: 0}
   _name: Bob
   _age: 44
-  _text: 
-  _parametrs: "\u041C\u0443\u0436\u0447\u0438\u043D\u0430, \u041B\u044E\u0431\u0438\u0442
-    \u0444\u0443\u0442\u0431\u043E\u043B \u0438 \u0441\u0432\u043E\u044E \u0441\u043E\u0431\u0430\u043A\u0443"
-  _tags:
-  - "\u0413\u043B\u0443\u043F\u044B\u0439"
-  - "\u0416\u0438\u0432\u043E\u0442\u043D\u044B\u0435"
-  - "\u0416\u0438\u0432\u043E\u0442\u043D\u044B\u0435"
+  _text: ...
+  _parametrs: Plays online games, eats fast food, sells gold in-game, lives with
+    his mom
+  _tags: 000000000d0000000600000004000000

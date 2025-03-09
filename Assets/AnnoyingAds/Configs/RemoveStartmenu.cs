@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class RemoveStartmenu : MonoBehaviour
@@ -8,6 +9,14 @@ public class RemoveStartmenu : MonoBehaviour
     [SerializeField] private Canvas _bigScreenOFF;
     [SerializeField] private Canvas _smallScreenOFF;
 
+    public void Start()
+    {
+        _smallScreen.gameObject.SetActive(false);
+        _bigScreen.gameObject.SetActive(false);
+    
+        _bigScreenOFF.gameObject.SetActive(true);
+        _smallScreenOFF.gameObject.SetActive(true);
+    }
 
     public void StartGame()
     {

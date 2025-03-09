@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af7b5356f8949f54d9ca40319ac4d1f9, type: 3}
   m_Name: Alexey
   m_EditorClassIdentifier: 
-  _image: {fileID: 0}
+  _image: {fileID: 21300000, guid: e57ab9afbed665541b7167624a666cd8, type: 3}
   _name: Alexey
   _age: 32
   _text: 'How to earn even more money... maybe buy stocks

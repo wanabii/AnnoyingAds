@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af7b5356f8949f54d9ca40319ac4d1f9, type: 3}
   m_Name: Kirill
   m_EditorClassIdentifier: 
-  _image: {fileID: 0}
+  _image: {fileID: 21300000, guid: b83024f1c0fd34d4da900796dd723be5, type: 3}
   _name: Kirill
   _age: 74
   _text: 'Mom, I don''t want to go to school

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af7b5356f8949f54d9ca40319ac4d1f9, type: 3}
   m_Name: German
   m_EditorClassIdentifier: 
-  _image: {fileID: 0}
+  _image: {fileID: 21300000, guid: d2503b93dc07af84c9b5c6421c98de19, type: 3}
   _name: German
   _age: 19
   _text: 'How to understand JavaScript... maybe C# is better

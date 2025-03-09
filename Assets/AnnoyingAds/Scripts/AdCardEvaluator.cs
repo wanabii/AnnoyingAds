@@ -6,7 +6,9 @@ public class AdCardEvaluator : MonoBehaviour
 {
     [SerializeField] private PersonSwitcher _personSwitcher;
     [SerializeField] private ScoreView _scoreView;
-
+    [SerializeField] private AudioSource _audioLose;
+    [SerializeField] private AudioSource _audioWin;
+    
     private void OnEnable()
     {
         GameEvents.OnSendAd += OnSendAdd;
@@ -26,6 +28,7 @@ public class AdCardEvaluator : MonoBehaviour
             if (Array.Exists(_personSwitcher.CurrentPerson._tags, tag => tag.Equals(positiveTag)))
             {
                 pointsChange += 10;
+                _audioWin.Play();
                 Debug.Log("Найден положительный тег: " + positiveTag + " => +10 очков");
             }
         }
@@ -35,6 +38,7 @@ public class AdCardEvaluator : MonoBehaviour
             if (Array.Exists(_personSwitcher.CurrentPerson._tags, tag => tag.Equals(negativeTag)))
             {
                 pointsChange -= 10;
+                _audioLose.Play();
                 Debug.Log("Найден отрицательный тег: " + negativeTag + " => -10 очков");
             }
         }

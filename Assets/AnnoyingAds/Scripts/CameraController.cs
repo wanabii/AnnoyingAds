@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -13,8 +14,11 @@ public class CameraController : MonoBehaviour
     private float _verticalRotation = 0f;
     private float _horizontalRotation = 0f;
 
+
+
     void Start()
     {
+
         // Блокируем курсор и скрываем его
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = true;
@@ -28,7 +32,6 @@ public class CameraController : MonoBehaviour
         float mouseX = Input.GetAxis("Mouse X") * _sensitivity;
         float mouseY = Input.GetAxis("Mouse Y") * _sensitivity;
         
-        // Поворот камеры вокруг вертикальной оси (ось Y)
         _horizontalRotation += mouseX;
         _horizontalRotation = Mathf.Clamp(_horizontalRotation, -_maxHorizontalAngle, _maxHorizontalAngle);
         

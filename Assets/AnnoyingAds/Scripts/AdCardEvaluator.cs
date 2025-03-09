@@ -8,6 +8,10 @@ public class AdCardEvaluator : MonoBehaviour
     [SerializeField] private ScoreView _scoreView;
     [SerializeField] private AudioSource _audioLose;
     [SerializeField] private AudioSource _audioWin;
+    [SerializeField] private GameObject _gamplayControler;
+
+
+    
     
     private void OnEnable()
     {
@@ -45,6 +49,12 @@ public class AdCardEvaluator : MonoBehaviour
 
         int newScore = _scoreView.CurrentScore + pointsChange;
         _scoreView.UpdateScore(newScore);
+        if (newScore <= -50)
+        {
+            _gamplayControler.GetComponent<GameplayControler>().GameEnd();
+        }
+        
+        
         GameEvents.NextPerson();
         Debug.Log("Обработана рекламная карточка. Изменение очков: " + pointsChange + ", Текущий счёт: " + _scoreView.CurrentScore);
     }
